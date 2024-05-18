@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <!-- header section start-->
+
+  <header class="header">
+    <section class="flex">
+      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+      <a href="index.html" class="logo"><i class="fas fa-briefcase"></i> JobManch</a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="login.html">Account</a>
+      </nav>
+    </section>
+  </header>
+
+  <!-- header section ends-->
+
+  <!-- ACCOUNT SECTION STARTS-->
+  <div class="account-form-container">
+    <section class="account-form">
+      <form action="" method="post">
+        <h3>create new account!</h3>
+        <input type="text" required name="name" maxlength="50" placeholder="Enter your name" class="input" />
+        <input type="email" required name="email" maxlength="50" placeholder="Enter your email" class="input" />
+        <input type="password" required name="pass" maxlength="20" placeholder="Enter your password" class="input" />
+        <input type="password" required name="c_pass" maxlength="20" placeholder="Confirm your password"
+          class="input" />
+        <p>Already have an account? <a href="login.html">Login now</a></p>
+        <input type="submit" value="login now" name="submit" class="btn" />
+        <p>Or Register with:</p>
+        <div class="social-login">
+          <button type="button" class="btn google">
+            <i class="fab fa-google"></i> Google
+          </button>
+          <button type="button" class="btn github">
+            <i class="fab fa-github"></i> GitHub
+          </button>
+          <button type="button" class="btn linkedin">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <!-- ACCOUNT SECTION END-->
+
+  <!-- footer starts-->
+
+  <footer class="footer">
+    <section class="grid">
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
+        <a href="about.html"><i class="fas fa-angle-right"></i> about us</a>
+        <a href="jobs.html"><i class="fas fa-angle-right"></i> jobs</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i> contact us</a>
+        <a href="#"><i class="fas fa-angle-right"></i> filter search</a>
+      </div>
+
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> account</a>
+        <a href="login.html"><i class="fas fa-angle-right"></i> login</a>
+        <a href="register.html"><i class="fas fa-angle-right"></i> register</a>
+        <a href="#"><i class="fas fa-angle-right"></i> dashboard</a>
+      </div>
+    </section>
+
+    <div class="credit">
+      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
+    </div>
+  </footer>
+
+  <!--footer ends-->
+
+  <!-- custom js file link  -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>

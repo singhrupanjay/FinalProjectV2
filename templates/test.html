@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My MongoDB Data</title>
+</head>
+
+<style>
+    #data-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        /* Adjust the gap between data items */
+    }
+
+    .data-item {
+        background-color: #c24cf9;
+        padding: 50px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+
+    }
+</style>
+
+<body>
+    <h1>JobManch User Data</h1>
+    <div id="data-container">
+        {% for item in data %}
+        <div class="data-item" style="text-align: center;">
+            <ul>
+                <li>
+                    <h3>
+                        {{ item.first_name }}
+                    </h3>
+                </li>
+            </ul>
+
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
