@@ -2,43 +2,102 @@
 <html>
 
 <head>
-    <title>My MongoDB Data</title>
+    <title>Latest Job Openings!!</title>
 </head>
 
 <style>
-    #data-container {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-
-        /* Adjust the gap between data items */
+    /* Add your CSS styles here */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: cornflowerblue;
+        /* background-image: url("/static/testBg.jpg"); */
     }
 
-    .data-item {
-        background-color: #c24cf9;
-        padding: 50px;
-        border: 1px solid #ccc;
-        border-radius: 25px;
+    .data-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
 
+    .jobs {
+        /*shadows to create the "card" effect */
+        /* background-color: #f2f2f2; */
+        border-radius: 25px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: cadetblue;
+        transition: 0.5s;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        width: 300px;
+        height: 300px;
+        opacity: 70%;
+
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .jobs:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    li {
+        margin-bottom: 20px;
+        /* margin-left: 40%; */
+        font-weight: bold;
+        text-align: left;
+        color: #f9f9f9;
+
+    }
+
+    .Jobdate {
+        text-align: left;
+        list-style-type: none;
+        margin-left: 20px;
+        font-weight: 100;
+    }
+
+    .Jobrole {
+        font-size: larger;
+        list-style-type: none;
+        margin-left: 20px;
+    }
+
+    h3 {
+        font-size: x-large;
     }
 </style>
 
 <body>
-    <h1>JobManch User Data</h1>
-    <div id="data-container">
-        {% for item in data %}
-        <div class="data-item" style="text-align: center;">
-            <ul>
-                <li>
-                    <h3>
-                        {{ item.first_name }}
-                    </h3>
-                </li>
-            </ul>
+    <h1 style="text-align: center; color: #f9f9f9;">LATEST JOBS</h1>
 
-        </div>
+    <div class="data-container">
+        {% for item in data %}
+        <div class="jobs">
+            <!-- <p class="center"> -->
+            <h3>{{ item.company}}</h3>
+            <hr>
+            <li class="Jobdate">{{item.date_uploaded}}
+            <li class="Jobrole">{{ item.job_role}}</li>
+            <li>{{ item.job_location}}</li>
+            <li>{{item.salary}}</li>
+            <li>{{item.job_type}}</li>
+            <li>{{item.working_shift }}</li>
+            <!-- </p> -->
+        </div> <!-- Replace 'field_name' with your actual field names -->
         {% endfor %}
+        {% for item in data %}
+        {% if "Amazon" in item.company %}class="testing"{%endif%}
+        {% endfor %}
+
     </div>
+
 </body>
 
 </html>

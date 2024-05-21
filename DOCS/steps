@@ -1,7 +1,0 @@
->python -m venv VirtualEnv  
-
-VirtualEnv\Scripts\activate
-
-pymongo = to connect python project to mongodb
-
-python-dotenv = to store pass credentials etc

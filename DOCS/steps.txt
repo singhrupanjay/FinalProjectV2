@@ -1,0 +1,114 @@
+>python -m venv VirtualEnv  
+
+VirtualEnv\Scripts\activate
+
+pymongo = to connect python project to mongodb
+
+python-dotenv = to store pass credentials etc
+
+
+
+#Sample DATA
+Company 
+Uploaded 
+Job Role
+Location 
+Salary 
+Job Type
+Shift 
+
+Amazon
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+facebook
+3 days ago
+senior web developer
+pune, india
+60k - 80k
+full-time
+day-shift
+
+Flipkart
+2 days ago
+Graphic designer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Google
+2 days ago
+software engineer
+bengaluru, india
+10k - 20k
+part-time
+day-shift
+
+Netflix
+2 days ago
+software engineer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Nike
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+coco-cola
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Uber
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Instagram
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Tata
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Linkedin
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
+
+Twitter
+2 days ago
+senior web developer
+hyderabad, india
+10k - 20k
+part-time
+day-shift
