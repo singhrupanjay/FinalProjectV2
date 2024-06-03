@@ -6,6 +6,22 @@ pymongo = to connect python project to mongodb
 
 python-dotenv = to store pass credentials etc
 
+# dbs = client.list_database_names()
+# print(dbs)
+# test_db = client.ProjectJobManch
+
+
+
+# def insert_job_data():
+#     collection = test_db.Jobdata
+#     test_document = {
+#         "name" : "first"
+#     }
+
+#     inserted_id = collection.insert_one(test_document)
+#     print(inserted_id)
+
+# insert_job_data()
 
 
 #Sample DATA

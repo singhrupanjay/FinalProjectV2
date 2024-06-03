@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Latest Job Openings!!</title>
+</head>
+<link rel="stylesheet" href="/static/style.css">
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #eee;
+        /* background-image: url("/static/testBg.jpg"); */
+    }
+
+    .data-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .jobs {
+        /*shadows to create the "card" effect */
+
+        border-radius: 25px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: #fbeaeb;
+        transition: 0.5s;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        width: 30em;
+        height: 40em;
+        opacity: 90%;
+
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .jobs:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    li {
+        margin-bottom: 20px;
+        /* margin-left: 40%; */
+        font-weight: bold;
+        text-align: left;
+        color: #000000;
+
+    }
+
+    .Jobdate {
+        text-align: left;
+        list-style-type: none;
+        margin-left: 20px;
+        font-weight: 100;
+    }
+
+    .Jobrole {
+        font-size: x-large;
+        list-style-type: none;
+        margin-left: 20px;
+    }
+
+    h3 {
+        font-size: x-large;
+        color: #060202;
+        margin-bottom: 5%;
+    }
+
+
+</style>
+
+<body>
+
+    <header class="header" style="margin-bottom: 20%;">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+            <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
+                    style="color: cadetblue;"></i> JobManch</a>
+
+            <nav class="navbar">
+                <a href="/index">Home</a>
+                <a href="/jobs">Jobs</a>
+            </nav>
+        </section>
+    </header>
+
+
+    <h1 style="text-align: center; color:black; margin-top: 10%;">ALL JOBS</h1>
+
+    <div class="data-container" style="margin-top: 3%;">
+
+        {% for item in data %}
+
+        <div class="jobs">
+            <p class="center">
+            <h3>{{ item.company}}</h3>
+            <hr style="color: #000000;">
+            <li class="Jobdate">{{item.date_uploaded}}</li>
+            <li class="Jobrole">{{ item.job_role}}</li>
+            <li><i class="fas fa-map-marker-alt"></i> {{ item.job_location}}</li>
+            <li><i class="fas fa-indian-rupee-sign"></i> {{item.salary}}</li>
+            <li><i class="fas fa-briefcase"></i> {{item.job_type}}</li>
+            <li><i class="fas fa-clock"></i> {{item.working_shift }}</li>
+            <button style="width: fit-content;height: 30px;margin-left: 170px;margin-top: 10px;"><a href="" style="color: #000000;">View Job</a></button>
+        </div>
+
+        {%endfor%}
+
+        <script>
+            // Get the div elements
+            // Get the div elements
+            const divs = document.querySelectorAll('.jobs');
+
+            // Define an array of class names
+            const classNames = ['class1', 'class2', 'class3', 'class4', 'class5',
+                'class6', 'class7', 'class8', 'class9', 'class10', 'class11', 'class12',
+                'class13', 'class14', 'class15', 'class16', 'class17', 'class18', 'class19',
+                'class20', 'class21', 'class22', 'class23', 'class24'];
+
+            // Add classes to each div
+            divs.forEach((div, index) => {
+                if (index < classNames.length) {
+                    div.classList.add(classNames[index]);
+                }
+            });
+        </script>
+    </div>
+
+</body>
+
+</html>
+

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
+  <title>JobManch</title>
 
   <!-- custom css file link -->
   <link rel="stylesheet" href="/static/style.css" />
@@ -17,61 +17,50 @@
     <section class="flex">
       <div id="menu-btn" class="fas fa-bars-staggered"></div>
 
-      <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase" style="color: cadetblue;"></i> JobManch</a>
+      <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
+          style="color: cadetblue;"></i> JobManch</a>
 
       <nav class="navbar">
         <a href="/index">Home</a>
+        <a href="/about">About us</a>
         <a href="/jobs">Jobs</a>
+        <a href="/contact">Contact Us</a>
         <a href="/login">Account</a>
       </nav>
     </section>
   </header>
 
   <!-- header section ends-->
-  
-  <!-- ACCOUNT SECTION STARTS-->
-  
-  <div class="account-form-container">
-    <section class="account-form">
-      <form method="POST">
-        <img src="/static/login_image.svg" alt="login" style="width: 50%; height: 50%;padding: 0; margin: 0;">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+  <!-- about us section starts-->
 
-        <label for="password">Password:</label>
-        <input type="text" id="password" name="password" required><br>
-        <input type="submit" value="Login">
-        
-        <!-- <a href="/jobs"><input type="button" value="login now" name="submit" class="btn" /></a> -->
-        
-        <p>Don't have an account? <a href="/register">Register now</a></p>
-        <p>Or login with:</p>
-        
-        <div class="social-login">
-          
-          <button type="button" class="btn google">
-            <i class="fab fa-google"></i> Google
-          </button>
+  <div class="section-title">About Us</div>
 
-          <button type="button" class="btn github">
-            <i class="fab fa-github"></i> GitHub
-          </button>
+  <section class="about">
+    <img src="assets/working.svg" alt="" />
+    <div class="box">
+      <h3>Why Choose Us?</h3>
+      <p>
+        <li>Seamless Experience*: Navigate the job market with ease, thanks to a user-friendly interface and
+          streamlined search.
+        </li>
+        <li>Up-to-the-Minute Updates*: Get the latest job postings faster than ever, so you never miss a chance.
+        </li>
+        <li>Personalized Dashboard*: Track your applications and manage your job hunt efficiently from your
+          custom dashboard.
+        </li>
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+        error aperiam suscipit, culpa eos exercitationem corporis delectus! Ut
+        placeat laboriosam quam quae, veritatis deserunt? Sit earum error
+        dolores voluptatum molestiae?
+      </p>
+      <a href="/contact" class="btn">Contact Us</a>
+    </div>
+  </section>
 
-          <button type="button" class="btn linkedin">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </button>
-
-        </div>
-
-      </form>
-
-
-    </section>
-  </div>
-
-  <!-- ACCOUNT SECTION END-->
-
+  <!-- about us section ends-->
   <!-- footer starts-->
 
   <footer class="footer">
@@ -96,7 +85,6 @@
       &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
     </div>
   </footer>
-
   <!--footer ends-->
 
   <!-- custom js file link  -->

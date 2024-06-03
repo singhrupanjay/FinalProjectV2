@@ -30,9 +30,13 @@
   <!-- header section ends-->
 
   <!-- ACCOUNT SECTION STARTS-->
+
+  <!-- Display this section if user has entered data -->
+
   <div class="account-form-container">
     <section class="account-form">
       <form action="" method="post">
+        <img src="/static/register_img.svg" alt="register_img" style="width: 50%; height: 50%;">
         <h3>create new account!</h3>
         <input type="text" required name="name" maxlength="50" placeholder="Enter your name" class="input" />
         <input type="email" required name="email" maxlength="50" placeholder="Enter your email" class="input" />
@@ -65,19 +69,17 @@
     <section class="grid">
       <div class="box">
         <h3>Quick links</h3>
-        <a href="home.html"><i class="fas fa-angle-right"></i> home</a>
-        <a href="about.html"><i class="fas fa-angle-right"></i> about us</a>
-        <a href="jobs.html"><i class="fas fa-angle-right"></i> jobs</a>
-        <a href="contact.html"><i class="fas fa-angle-right"></i> contact us</a>
-        <a href="#"><i class="fas fa-angle-right"></i> filter search</a>
+        <a href="/index"><i class="fas fa-angle-right"></i> home</a>
+        <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
+        <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
+        <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
       </div>
 
       <div class="box">
         <h3>extra links</h3>
         <a href="#"><i class="fas fa-angle-right"></i> account</a>
-        <a href="login.html"><i class="fas fa-angle-right"></i> login</a>
-        <a href="register.html"><i class="fas fa-angle-right"></i> register</a>
-        <a href="#"><i class="fas fa-angle-right"></i> dashboard</a>
+        <a href="/login"><i class="fas fa-angle-right"></i> login</a>
+        <a href="/register"><i class="fas fa-angle-right"></i> register</a>
       </div>
     </section>
 

@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_pymongo import MongoClient
-from flask_pymongo import PyMongo
+# from flask_pymongo import PyMongo
 from flask import render_template
-from flask import request, redirect, url_for, flash
+from flask import request, redirect, url_for, session
 import os
 import pprint
 
@@ -10,23 +10,6 @@ app = Flask(__name__)
 
 connection_string = f"mongodb+srv://Admin:jobmanchpassword130524@jobmanchcluster.vittg4t.mongodb.net/?retryWrites=true&w=majority&appName=JobManchCluster"
 client = MongoClient(connection_string)
-
-dbs = client.list_database_names()
-print(dbs)
-test_db = client.ProjectJobManch
-
-
-
-def insert_job_data():
-    collection = test_db.Jobdata
-    test_document = {
-        "name" : "first"
-    }
-
-    inserted_id = collection.insert_one(test_document)
-    print(inserted_id)
-
-# insert_job_data()
 
 
 #CREATING DATABASE user_data
@@ -42,7 +25,7 @@ JobData = client.JobData
 #CREATING COLLECTION jobDetails under DATABASE JobData
 jobDetails = JobData.jobDetails
 
-
+#DASHBOARD
 #INSERT DOCUMENT USERDATA
 def create_documents():
     first_name = ["jonh", "Raj", "Tim", "Seline" ]
@@ -59,6 +42,7 @@ def create_documents():
 #CALLING FUNCTION TO INSERT User Data
 # create_documents()
 
+#DASHBOARD
 #INSERT DOCUMENT jobDetails
 def create_jobdetails_documents():
     # Role = ["SDE1", "Analyst", "Devops", "UI/UX" ]
@@ -82,27 +66,30 @@ def create_jobdetails_documents():
 
     jobDetails.insert_many(docs)
 
+#DASHBOARD
 #CALLING FUNCTION TO INSERT User Data
 # create_jobdetails_documents()
 
-#USING PRETTYPRINT TO GET A CUSTOMIZED AND CLEAN OUTPUT 
+# USING PRETTYPRINT TO GET A CUSTOMIZED AND CLEAN OUTPUT 
 printer = pprint.PrettyPrinter()
 
-def display_UserData():
-    users = jobDetails.find() #.find() method to find all the data in the user_data collection
+# def display_UserData():
+#     users = jobDetails.find() #.find() method to find all the data in the user_data collection
 
-    for user in users:
-        printer.pprint(user)
+#     for user in users:
+#         printer.pprint(user)
 
 # display_UserData()
 
-#SEARCH FOR A SPECIFIC DATA IN DATABASE
+#DASHBOARD
+# SEARCH FOR A SPECIFIC DATA IN DATABASE
 def find_data():
-    data = user_collection.find({"first_name":"jonh"})
+    data = jobDetails.find()
     printer.pprint(list(data))
 
 # find_data()
 
+#DASHBOARD
 #UPDATING DATA
 def updateDataById(user_id):
     from bson.objectid import ObjectId #importing id of user object
@@ -123,7 +110,7 @@ def updateDataById(user_id):
 
 # updateDataById("664729fca6ad3f4688e6d424")
 
-
+#DASHBOARD
 #DELETING DOCUMENTS
 def delete_method():
 #     from bson.objectid import ObjectId #importing id of user object
@@ -147,6 +134,12 @@ def home():
 @app.route('/jobs')
 def jobs():
     return render_template('jobs.html')
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 ### DISPLAYING TEST DATA
@@ -154,19 +147,27 @@ def jobs():
 def display_data():
     jobData = jobDetails.find()  # Fetch all documents from the collection
 
-    return render_template('test.html', data=jobData, count = 0)
+    return render_template('AllJobs.html', data=jobData, count = 0)
+
 
 ### TAKING TEST INPUT AND STORING ON MONGODB in register
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    # global entered_data
     if request.method == "POST":
         # Get data from the form
         name = request.form.get("name")
         email = request.form.get("email")
         password = request.form.get("password")
+ 
+        if name or email or password:
+            # Insert data into MongoDB
+            user_credentials.insert_one({"name": name, "email": email, "password": password })
+            return render_template('success.html')
+        else:
+            return render_template('register.html')
 
-        # Insert data into MongoDB
-        user_credentials.insert_one({"name": name, "email": email, "password": password })
+
     return render_template('register.html')
 
 ### USER AUTHENTICATION in login
@@ -181,16 +182,13 @@ def login():
 
         if user1:
             return redirect(url_for('jobs'))
-            # return "<h1>Pass</h1>"
         else:
-            flash('Invalid credentials. Please try again.', 'error')
-            # return "<h1>Fail</h1>"
+            return render_template("Fail.html")
 
     return render_template('login.html')
 
+
 app.secret_key = "lorem"
-
-
 if __name__ == '__main__':
     app.run(debug=True)
 
