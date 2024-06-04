@@ -57,3 +57,7 @@ IMPORTANT
          - > $gunicorn app:app
 
 Choose the plan that suits you
+
+click on Create Web Service
+
+
