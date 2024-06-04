@@ -3,7 +3,6 @@ from flask_pymongo import MongoClient
 # from flask_pymongo import PyMongo
 from flask import render_template
 from flask import request, redirect, url_for, session
-import os
 import pprint
 
 app = Flask(__name__)

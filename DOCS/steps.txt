@@ -6,6 +6,8 @@ pymongo = to connect python project to mongodb
 
 python-dotenv = to store pass credentials etc
 
+gunicorn library - production server for python
+
 # dbs = client.list_database_names()
 # print(dbs)
 # test_db = client.ProjectJobManch
@@ -24,107 +26,32 @@ python-dotenv = to store pass credentials etc
 # insert_job_data()
 
 
-#Sample DATA
-Company 
-Uploaded 
-Job Role
-Location 
-Salary 
-Job Type
-Shift 
+DEPLOYING ON RENDER.COM
+click on new
+    choose web service from dropdown
 
-Amazon
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
+select Build and deploy from a Git repository
+    click next
 
-facebook
-3 days ago
-senior web developer
-pune, india
-60k - 80k
-full-time
-day-shift
+now on the page of create new web service
+    on the right side click on configure account below the Github option
 
-Flipkart
-2 days ago
-Graphic designer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
+Under Repository access
+    click on select repository to add repo of your project
+    click save
 
-Google
-2 days ago
-software engineer
-bengaluru, india
-10k - 20k
-part-time
-day-shift
+Now you can see your project repo  name under connect a repository
+    click on connect button corresponding to your project repo
 
-Netflix
-2 days ago
-software engineer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
+Now configure all the rquired options like name, region etc
 
-Nike
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
+IMPORTANT
+    Build Command
+        create requirements.txt if not already as the libraries written inside this txt file will be installed if youre try to run or clone your project on a different machine or even when installed
+        being deployed in the cloud.
+         - > $pip install -r requirements.txt
 
-coco-cola
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
-
-Uber
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
-
-Instagram
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
-
-Tata
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
-
-Linkedin
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
-
-Twitter
-2 days ago
-senior web developer
-hyderabad, india
-10k - 20k
-part-time
-day-shift
+    Start Command
+        the name of the file of your project which is main.py in this case and,
+        name of the variable that contains the flask application that we want to run.
+         - > $gunicorn app:app
