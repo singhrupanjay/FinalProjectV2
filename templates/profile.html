@@ -1,83 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
 
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
 
-  <body>
-    <div class="account-form-container">
-      <section class="account-form">
-        <form action="" method="post">
-          <h3>Profile</h3>
-          <input
-            type="text"
-            required
-            name="name"
-            maxlength="50"
-            placeholder=" Name"
-            class="input"
-          />
-          <input
-            type="email"
-            required
-            name="email"
-            maxlength="50"
-            placeholder=" Email"
-            class="input"
-          />
-          <input
-            type="password"
-            required
-            name="pass"
-            maxlength="20"
-            placeholder=" Password"
-            class="input"
-          />
-          <input
-            type="date"
-            required
-            name="dob"
-            maxlength="20"
-            placeholder=" Date of birth"
-            class="input"
-          />
-          <input
-            type="text"
-            required
-            name="name"
-            maxlength="50"
-            placeholder=" City"
-            class="input"
-          />
-          <input
-            type="text"
-            required
-            name="name"
-            maxlength="50"
-            placeholder=" State"
-            class="input"
-          />
-          <input
-            type="text"
-            required
-            name="number"
-            maxlength="50"
-            placeholder="Mobile No."
-            class="input"
-          />
-          <button type="submit" class="btn">Save</button>
-          <button type="button" class="btn" id="edit-profile-btn">
-            Edit Profile
-          </button>
-        </form>
-      </section>
-    </div>
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
 
-    <script src="script.js"></script>
-  </body>
+<body>
+
+  <!-- header section start-->
+  <header class="header">
+    <section class="flex">
+      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+      <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+      <nav class="navbar">
+        <a href="/index">Home</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Log In / Register</a>
+      </nav>
+    </section>
+  </header>
+  <!-- header section ends-->
+
+  <div class="account-form-container">
+    <section class="account-form">
+      <form action="" method="post">
+        <h3>Profile</h3>
+        <input type="text" required name="name" maxlength="50" placeholder=" Name" class="input" />
+        <input type="email" required name="email" maxlength="50" placeholder=" Email" class="input" />
+        <input type="text" required name="name" maxlength="50" placeholder=" City" class="input" />
+        <input type="text" required name="name" maxlength="50" placeholder=" State" class="input" />
+        <button type="submit" class="btn">Save</button>
+        <button type="button" class="btn" id="edit-profile-btn">Edit Profile</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -2,106 +2,85 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 
-  <!-- custom css file link -->
-  <link rel="stylesheet" href="/static/style.css" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
-  <!-- header section start-->
 
-  <header class="header">
-    <section class="flex">
-      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+    <!-- header section start-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+            <nav class="navbar">
+                <a href="/index">Home</a>
+                <a href="/jobs">Jobs</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/login">Log In / Register</a>
+            </nav>
+        </section>
+    </header>
+    <!-- header section ends-->
 
-      <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase" style="color: cadetblue;"></i> JobManch</a>
+    <!-- ACCOUNT SECTION STARTS-->
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="" method="post">
+                <img src="/static/login_image.svg" style="width: 30rem;height: 30rem;" alt="login image">
+                <h3>welcome back!</h3>
 
-      <nav class="navbar">
-        <a href="/index">Home</a>
-        <a href="/jobs">Jobs</a>
-        <a href="/login">Account</a>
-      </nav>
-    </section>
-  </header>
+                <label for="email" style="font-size: large;">Email:</label><br>
+                <input type="email" id="email" name="email" required
+                    style="padding: 12px 20px; border: 2px solid black; border-radius: 4px; width: 50%;"><br>
 
-  <!-- header section ends-->
-  
-  <!-- ACCOUNT SECTION STARTS-->
-  
-  <div class="account-form-container">
-    <section class="account-form">
-      <form method="POST">
-        <img src="/static/login_image.svg" alt="login" style="width: 50%; height: 50%;padding: 0; margin: 0;">
+                <label for="password" style="font-size: large;">Password:</label><br>
+                <input type="text" id="password" name="password" required
+                    style="padding: 12px 20px; border: 2px solid black;border-radius: 4px;"><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="password">Password:</label>
-        <input type="text" id="password" name="password" required><br>
-        <input type="submit" value="Login">
-        
-        <!-- <a href="/jobs"><input type="button" value="login now" name="submit" class="btn" /></a> -->
-        
-        <p>Don't have an account? <a href="/register">Register now</a></p>
-        <p>Or login with:</p>
-        
-        <div class="social-login">
-          
-          <button type="button" class="btn google">
-            <i class="fab fa-google"></i> Google
-          </button>
-
-          <button type="button" class="btn github">
-            <i class="fab fa-github"></i> GitHub
-          </button>
-
-          <button type="button" class="btn linkedin">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </button>
-
-        </div>
-
-      </form>
-
-
-    </section>
-  </div>
-
-  <!-- ACCOUNT SECTION END-->
-
-  <!-- footer starts-->
-
-  <footer class="footer">
-    <section class="grid">
-      <div class="box">
-        <h3>Quick links</h3>
-        <a href="/index"><i class="fas fa-angle-right"></i> home</a>
-        <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
-        <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
-        <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
-      </div>
-
-      <div class="box">
-        <h3>extra links</h3>
-        <a href="#"><i class="fas fa-angle-right"></i> account</a>
-        <a href="/login"><i class="fas fa-angle-right"></i> login</a>
-        <a href="/register"><i class="fas fa-angle-right"></i> register</a>
-      </div>
-    </section>
-
-    <div class="credit">
-      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
+                <p>Don't have an account? <a href="/register">Register now</a></p>
+                <input type="submit" value="Login" style="padding: 12px 30px;">
+            </form>
+        </section>
     </div>
-  </footer>
+    <!-- ACCOUNT SECTION END-->
 
-  <!--footer ends-->
+    <!-- footer starts-->
 
-  <!-- custom js file link  -->
+    <footer class="footer">
 
-  <script src="script.js"></script>
+        <section class="grid">
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="/index"><i class="fas fa-angle-right"></i> home</a>
+                <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
+                <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
+                <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="/login"><i class="fas fa-angle-right"></i> login</a>
+                <a href="/register"><i class="fas fa-angle-right"></i> register</a>
+                <a href="/dashboard"><i class="fas fa-angle-right"></i> dashboard</a>
+            </div>
+        </section>
+
+        <div class="credit">&copy; copyright @2024 by <span>JobManch</span> | all rights reserved !</div>
+    </footer>
+    <!--footer ends-->
+
+
+    <!-- custom js file link  -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

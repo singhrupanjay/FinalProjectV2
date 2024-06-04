@@ -1,152 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
 
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="/static/style.css" />
-  </head>
-  <body>
-    <!-- header section start-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
 
-    <header class="header">
-      <section class="flex">
-        <div id="menu-btn" class="fas fa-bars-staggered"></div>
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
 
-        <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase" style="color: cadetblue;"></i> JobManch</a>
-        
-        <nav class="navbar">
-          <a href="/index">Home</a>
-          <a href="/about">About us</a>
-          <a href="/jobs">Jobs</a>
-          <a href="/contact">Contact Us</a>
-          <a href="/login">Account</a>
-        </nav>
-      </section>
-    </header>
+<body>
 
-    <!-- header section ends-->
+  <!-- header section start-->
+  <header class="header">
+    <section class="flex">
+      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+      <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+      <nav class="navbar">
+        <a href="/index">Home</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Log In / Register</a>
+      </nav>
+    </section>
+  </header>
+  <!-- header section ends-->
 
-    <!-- contact us section starts-->
+  <!-- contact us section starts-->
 
-    <div class="section-title">Contact Us</div>
+  <div class="section-title"> Contact Us</div>
 
-    <section class="contact">
-      <div class="box-container">
-        <div class="box">
-          <i class="fas fa-phone"></i>
-          <a href="tel:1234657890">123-4567-7890</a>
-          <a href="tel:1234657890">123-4567-7890</a>
-        </div>
-
-        <div class="box">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:jobmanch@gmail.com">jobmanch@gmail.com</a>
-          <a href="mailto:jobmanch@gmail.com">jobmanch@gmail.com</a>
-        </div>
-
-        <div class="box">
-          <i class="fas fa-map-marker-alt"></i>
-          <a href="#"> Building no.4 Main road Ranchi Jharkhand- 835222</a>
-        </div>
+  <section class="contact">
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-phone"></i>
+        <a href="tel:1234657890">123-4567-7890</a>
+        <a href="tel:1234657890">123-4567-7890</a>
       </div>
 
-      <form action="" method="post">
-        <h3>drop your message</h3>
-        <div class="flex">
-          <div class="box">
-            <p>name <span>*</span></p>
-            <input
-              type="text"
-              name="name"
-              required
-              maxlength="20"
-              placeholder="enter your name"
-              class="input"
-            />
-          </div>
+      <div class="box">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:jobmanch@gmail.com">jobmanch@gmail.com</a>
+        <a href="mailto:jobmanch@gmail.com">jobmanch@gmail.com</a>
+      </div>
 
-          <div class="box">
-            <p>email <span>*</span></p>
-            <input
-              type="email"
-              name="email"
-              required
-              maxlength="50"
-              placeholder="enter your email"
-              class="input"
-            />
-          </div>
+      <div class="box">
+        <i class="fas fa-map-marker-alt"></i>
+        <a href="#"> Building no.4 Main road Ranchi Jharkhand- 835222</a>
+      </div>
 
-          <div class="box">
-            <p>number <span>*</span></p>
-            <input
-              type="number"
-              name="number"
-              required
-              min="0"
-              max="9999999999"
-              maxlength="20"
-              placeholder="enter your number"
-              class="input"
-            />
-          </div>
+    </div>
 
-          <div class="box">
-            <p>role <span>*</span></p>
-            <select name="role" required class="input">
-              <option value="employee">job seeker (employee)</option>
-              <option value="employeer">job provider (employeer)</option>
-            </select>
-          </div>
+    <form action="" method="post">
+      <h3>drop your message</h3>
+      <div class="flex">
+        <div class="box">
+          <p>name <span>*</span></p>
+          <input type="text" name="name" required maxlength="20" placeholder="enter your name" class="input">
         </div>
-        <p>message <span>*</span></p>
-        <textarea
-          name="message"
-          class="input"
-          required
-          maxlength="1000"
-          placeholder="enter your message"
-          cols="30"
-          rows="10"
-        ></textarea>
-        <input type="submit" value="send message" name="send" class="btn" />
-      </form>
+
+        <div class="box">
+          <p>email <span>*</span></p>
+          <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="input">
+        </div>
+
+        <div class="box">
+          <p>number <span>*</span></p>
+          <input type="number" name="number" required min="0" max="9999999999" maxlength="20"
+            placeholder="enter your number" class="input">
+        </div>
+
+        <div class="box">
+          <p>role <span>*</span></p>
+          <select name="role" required class="input">
+            <option value="employee">job seeker (employee)</option>
+            <option value="employeer">job provider (employeer)</option>
+          </select>
+
+        </div>
+      </div>
+      <p>message <span>*</span></p>
+      <textarea name="message" class="input" required maxlength="1000" placeholder="enter your message" cols="30"
+        rows="10"></textarea>
+      <input type="submit" value="send message" name="send" class="btn">
+    </form>
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- contact us section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer starts-->
+
+  <footer class="footer">
+    <section class="grid">
+      <div class="box">
+        <a href="index.html" class="logo"><i class="fas fa-briefcase"></i> <b>JobManch</b>
+        </a>
+      </div>
+
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="index.html"><i class="fas fa-angle-right"></i> home</a>
+        <a href="jobs.html"><i class="fas fa-angle-right"></i> jobs</a>
+        <a href="contact.html"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+        <!-- <a href="#"><i class="fas fa-angle-right"></i> filter search</a> -->
+      </div>
+
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="#"><i class="fas fa-angle-right"></i> account</a>
+        <a href="login.html"><i class="fas fa-angle-right"></i> login</a>
+        <a href="register.html"><i class="fas fa-angle-right"></i> register</a>
+        <!-- <a href="#"><i class="fas fa-angle-right"></i> dashboard</a> -->
+      </div>
+      <div class="follow-us">
+        <h3>Follow us</h3>
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </section>
 
-    <!-- contact us section ends-->
+    <div class="credit">
+      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
+    </div>
+  </footer>
 
-    <!-- footer starts-->
+  <!--footer ends-->
 
-    <footer class="footer">
-      <section class="grid">
-        <div class="box">
-          <h3>Quick links</h3>
-          <a href="/index"><i class="fas fa-angle-right"></i> home</a>
-          <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
-          <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
-          <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
-        </div>
+  <!-- custom js file link  -->
 
-        <div class="box">
-          <h3>extra links</h3>
-          <a href="#"><i class="fas fa-angle-right"></i> account</a>
-          <a href="/login"><i class="fas fa-angle-right"></i> login</a>
-          <a href="/register"><i class="fas fa-angle-right"></i> register</a>
-        </div>
-      </section>
+  <script src="script.js"></script>
+</body>
 
-      <div class="credit">
-        &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
-      </div>
-    </footer>
-
-    <!--footer ends-->
-
-    <!-- custom js file link  -->
-
-    <script src="script.js"></script>
-  </body>
 </html>

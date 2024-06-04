@@ -2,462 +2,452 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
 
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="/static/style.css">
+  <!-- custom css file link -->
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
 </head>
 
 <body>
-
-    <!-- header section start-->
-
-    <header class="header">
-        <section class="flex">
-            <div id="menu-btn" class="fas fa-bars-staggered"></div>
-            <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
-                    style="color: cadetblue;"></i> JobManch</a>
-            <nav class="navbar">
-                <a href="/index">Home</a>
-                <a href="/about">About</a>
-                <a href="#jobD">Jobs</a>
-                <a href="/contact">Contact</a>
-                <a href="/login">Account</a>
-            </nav>
-            <button id="top-arrow" class="arrow-button">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-
-            <button id="bottom-arrow" class="arrow-button">
-                <i class="fas fa-arrow-down"></i>
-            </button>
-        </section>
-    </header>
-
-    <!-- header section ends-->
-
-    <!-- home section starts-->
-
-    <!-- <div class="home-container">
-    <section class="home">
-        <form action="" method="post">
-            <h3>find your next job</h3> 
-            <p>Job title <span>*</span></p>
-            <input type="text" name="title" placeholder="keyword, category or company" required maxlength="20" class="input">  
-            <p>Job location <span>*</span></p>
-            <input type="text" name="location" placeholder="city, state or country" required maxlength="50" class="input"> 
-            <input type="submit" value="search job" name="search" class="btn">
-        </form>
+  <!-- header section start-->
+  <header class="header">
+    <section class="flex">
+      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+      <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+      <nav class="navbar">
+        <a href="/index">Home</a>
+        <a href="/jobs">Jobs</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/login">Log In / Register</a>
+      </nav>
     </section>
-</div> -->
-    <div class="home-container">
-        <div class="home-content">
-            <h1 class="home-title"><span>Find a Job</span>, Shape Your Future</h1>
-            <p class="home-description">
-                At Job Manch, we believe that the right job can transform your life. Whether you're a seasoned
-                professional or just starting out, our platform connects you with opportunities that align with your
-                skills, passions, and aspirations.
-                Ready to take the next step. <br> Job Manch is here to guide you toward your ideal career path. Start
-                exploring now</p>
-            <button class="home-button">Get Started</button>
+  </header>
+  <!-- header section ends-->
+
+  <!-- home section starts-->
+
+  <div class="home-container">
+    <div class="home-content">
+      <h1 class="home-title"><span>Find a Job</span>, Shape Your Future</h1>
+      <p class="home-description">
+        At Job Manch, we believe that the right job can transform your life.
+        Whether you're a seasoned professional or just starting out, our
+        platform connects you with opportunities that align with your skills,
+        passions, and aspirations. Ready to take the next step. <br />
+        Job Manch is here to guide you toward your ideal career path. Start
+        exploring now
+      </p>
+      <button class="home-button"> <a href="#jobsection" style="text-decoration: none; color: white;">Get
+          Started</a></button>
+    </div>
+    <div class="home-image">
+      <img src="/static/main-hero.jpg" alt="Finder Illustration" />
+    </div>
+  </div>
+
+  <!-- home section ends-->
+
+  <!-- popular searches start here-->
+  <div class="popular-search">
+    <h2>Popular Searches</h2>
+    <ul>
+      <li><button>Software Engineer</button></li>
+      <li><button>Data Scientist</button></li>
+      <li><button>Product Manager</button></li>
+      <li><button>UI/UX Designer</button></li>
+      <li><button>Sales Representative</button></li>
+    </ul>
+  </div>
+  <!-- popular searches End here-->
+
+  <!-- category section start-->
+
+  <div class="category">
+    <section>
+      <h1 class="heading">
+        <span>Countless Career Options</span> Are Waiting <br />For you To
+        Explore
+      </h1>
+
+      <div class="box-container">
+        <a href="#" class="box"><i class="fas fa-code"></i>
+          <div>
+            <h3>development</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-pen"></i>
+          <div>
+            <h3>designer</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-chalkboard-user"></i>
+          <div>
+            <h3>teacher</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-wrench"></i>
+          <div>
+            <h3>engineer</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-ad"></i>
+          <div>
+            <h3>marketing</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-headset"></i>
+          <div>
+            <h3>services</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-hand-holding-dollar"></i>
+          <div>
+            <h3>finance</h3>
+          </div>
+        </a>
+
+        <a href="#" class="box"><i class="fas fa-person-digging"></i>
+          <div>
+            <h3>labour</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- category section ends-->
+
+  <!-- jobs section starts-->
+
+  <section id="jobsection" class="jobs-container">
+    <h1 class="heading"><span>Latest And Top</span> Job Opening</h1>
+    <div class="box-container">
+      <div class="box">
+        <div class="company">
+          <img src="/static/amazon.png" alt="" />
+          <div>
+            <h3>Amazon</h3>
+            <span>2 days ago</span>
+          </div>
         </div>
-        <div class="home-image">
-            <img src="/static/hero-section2.svg" height="500px" alt="Finder Illustration" />
+        <h3 class="job-title">senior web developer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>part-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
         </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+          <img src="/static/facebook.jpg" alt="" />
+          <div>
+            <h3>facebook</h3>
+            <span>3 days ago</span>
+          </div>
+        </div>
+        <h3 class="job-title">senior web developer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>pune, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>60k - 80k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>full-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
+        </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+          <img src="/static/flipkart.png" alt="" />
+          <div>
+            <h3>Flipkart</h3>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <h3 class="job-title">Graphic designer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>part-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
+        </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+          <img src="/static/google.png" alt="" />
+          <div>
+            <h3>Google</h3>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <h3 class="job-title">software engineer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>bengaluru, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>part-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
+        </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+          <img src="/static/netflix.png" alt="" />
+          <div>
+            <h3>Netflix</h3>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <h3 class="job-title">software engineer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>part-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
+        </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="company">
+          <img src="/static/amazon.png" alt="" />
+          <div>
+            <h3>Amazon</h3>
+            <span>2 days ago</span>
+          </div>
+        </div>
+        <h3 class="job-title">senior web developer</h3>
+        <p class="location">
+          <i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span>
+        </p>
+        <div class="tags">
+          <p>
+            <i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span>
+          </p>
+          <p>
+            <i class="fas fa-briefcase"><span>part-time</span></i>
+          </p>
+          <p>
+            <i class="fas fa-clock"><span>day-shift</span></i>
+          </p>
+        </div>
+        <div class="flex-btn">
+          <a href="/login" class="btn">view details</a>
+          <button type="submit" class="fas fa-heart" name="save"></button>
+        </div>
+      </div>
     </div>
 
-    <!-- home section ends-->
-
-    <!-- popular searches start-->
-
-    <div class="popular-searches-container">
-        <h1>Popular Searches</h1>
-        <div class="popular-searches-list">
-            <div class="popular-search">
-                <p>Software Engineer</p>
-
-            </div>
-            <div class="popular-search">
-                <p>Data Analyst</p>
-
-            </div>
-            <div class="popular-search">
-                <p>Marketing Manager</p>
-
-            </div>
-            <div class="popular-search">
-                <p>Product Manager</p>
-
-            </div>
-            <div class="popular-search">
-                <p>Web Development</p>
-
-            </div>
-            <div class="popular-search">
-                <p>Cloud Engineer</p>
-
-            </div>
-        </div>
+    <div class="view-btn">
+      <a href="/jobs" class="btn">view more</a>
     </div>
+  </section>
 
-    <!-- popular searches start-->
+  <!-- jobs section ends-->
 
-
-
-    <!-- category section start-->
-
-    <div class="category">
-        <section>
-            <h1 class="heading"><span>Countless Career Options</span> Are Waiting <br>For you To Explore</h1>
-
-            <div class="box-container">
-
-                <a href="#" class="box"><i class="fas fa-code"></i>
-                    <div>
-                        <h3>development</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-pen"></i>
-                    <div>
-                        <h3>designer</h3>
-                        <span>500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-chalkboard-user"></i>
-                    <div>
-                        <h3>teacher</h3>
-                        <span>1500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-wrench"></i>
-                    <div>
-                        <h3>engineer</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-
-                <a href="#" class="box"><i class="fas fa-ad"></i>
-                    <div>
-                        <h3>marketing</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-headset"></i>
-                    <div>
-                        <h3>services</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-hand-holding-dollar"></i>
-                    <div>
-                        <h3>finance</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-
-
-                <a href="#" class="box"><i class="fas fa-person-digging"></i>
-                    <div>
-                        <h3>labour</h3>
-                        <span>2500 jobs</span>
-                    </div>
-                </a>
-            </div>
-        </section>
+  <!-- our special feature start from here -->
+  <section class="special-features">
+    <div class="feature-container">
+      <div class="feature">
+        <h2><span>Our Special</span> Features</h2>
+        <div class="feature-content">
+          <p>Find full-time jobs and internships that are perfect for you.</p>
+          <p>Get personalized job recomandations directly.</p>
+          <p>
+            Explore job roles based of your study and get best job
+            opportunities.
+          </p>
+        </div>
+      </div>
+      <img src="/static/attheoffice-pana.jpg" alt="Feature Image" class="feature-image" />
     </div>
+  </section>
+  <!-- our special feature end from here -->
 
-    <!-- category section ends-->
-
-    <!-- jobs section starts-->
-
-    <section id = "jobD" class="jobs-container">
-        <h1 class="heading"><span>Latest And Top</span> Job Opening</h1>
-        <div class="box-container">
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/amazon.png" alt="">
-                    <div>
-                        <h3>Amazon</h3>
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">senior web developer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
-                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/facebook.jpg" alt="">
-                    <div>
-                        <h3>facebook</h3>
-                        <span>3 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">senior web developer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>pune, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>60k - 80k</span></p>
-                    <p><i class="fas fa-briefcase"><span>full-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/flipkart.png" alt="">
-                    <div>
-                        <h3>Flipkart</h3>
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">Graphic designer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
-                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/google.png" alt="">
-                    <div>
-                        <h3>Google</h3>
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">software engineer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>bengaluru, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
-                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/netflix.png" alt="">
-                    <div>
-                        <h3>Netflix</h3>
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">software engineer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
-                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="company">
-                    <img src="/static/amazon.png" alt="">
-                    <div>
-                        <h3>Amazon</h3>
-                        <span>2 days ago</span>
-                    </div>
-                </div>
-                <h3 class="job-title">senior web developer</h3>
-                <!-- <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
-                <div class="tags">
-                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
-                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
-                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
-                </div> -->
-                <div class="flex-btn">
-                    <a href="/display" class="btn">view details</a>
-                    <button type="submit" class="fas fa-heart" name="save"></button>
-                </div>
-            </div>
+  <!-- process start from here -->
+  <div class="process-section">
+    <h2>Apply a job in <span> 4 Easy step </span></h2>
+    <div class="process">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-title">Create an Account</div>
+        <div class="step-description">
+          Create an account with us, it's easy and fast. Get access to all the
+          latest job listings and manage your job applications..
         </div>
-
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="/login" class="btn">view all</a>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-title">Find a Job</div>
+        <div class="step-description">
+          Search for jobs that match your skills and interests.
         </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-title">Apply for Jobs</div>
+        <div class="step-description">
+          Use our easy application process to apply for your dream job.
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-title">Get Hired</div>
+        <div class="step-description">
+          If you're a good fit,we'll extend an offer and welcome you to our
+          team! .
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- process end from here -->
+
+  <!-- add-start -->
+  <div class="image-text-page">
+    <div class="image-section">
+      <img src="/static/telecomputing-pana.jpg" alt="Job Search Image" />
+    </div>
+    <div class="text-section">
+      <h2><span>Find your perfect job</span> based on your interest</h2>
+      <p>Find full-time jobs and internships that are perfect for you.</p>
+      <p>Get personalized job recomandations directly.</p>
+      <p>
+        Explore job roles based of your study and get best job opportunities.
+      </p>
+    </div>
+  </div>
+  <!-- add-end -->
+
+  <!-- newsletter start from here -->
+  <div class="newsletter-container">
+    <div class="close-button"></div>
+    <div class="content">
+      <div class="icon">
+        <img src="/static/newsletter.png" height="50px" alt="" />
+      </div>
+      <h2>Get Latest Job Updates</h2>
+      <p>
+        You will never miss our latest news, trending jobs etc. Our newsletter
+        is once a week, every Thursday.
+      </p>
+      <input type="email" placeholder="user@gmail.com" />
+      <button>Subscribe</button>
+    </div>
+  </div>
+  <!-- newsletter end here -->
+
+  <!-- footer starts-->
+
+  <footer class="footer">
+    <section class="grid">
+      <div class="box">
+        <a href="/index" class="logo"><i class="fas fa-briefcase"></i> <b>JobManch</b>
+        </a>
+      </div>
+
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="/index"><i class="fas fa-angle-right"></i> home</a>
+        <a href="/login"><i class="fas fa-angle-right"></i> jobs</a>
+        <a href="/contact"><i class="fas fa-angle-right"></i>Contact</a>
+        <a href="/about"><i class="fas fa-angle-right"></i>About</a>
+      </div>
+
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="/login"><i class="fas fa-angle-right"></i> login</a>
+        <a href="/register"><i class="fas fa-angle-right"></i> register</a>
+        <a href="/dashboard"><i class="fas fa-angle-right"></i> dashboard</a>
+      </div>
+      <div class="follow-us">
+        <h3>Follow us</h3>
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+      </div>
     </section>
 
-
-    <!-- jobs section ends-->
-
-
-    <!-- our special feature start from here -->
-
-    <div class="container">
-        <div class="left-side">
-            <h1>Our Special Features</h1>
-            <p>
-            <ul>
-                <li>Job Manch : Unleash potential.Discover jobs from across the web in one powerful hub.</li>
-                <li>Vast Selection : Explore a curated collection of opportunities from various job boards, all in one
-                    spot.
-                </li>
-                <li>Effortless Discovery*: Our advanced scraping technology does the heavy lifting, bringing you closer
-                    to your dream job.
-                </li>
-
-            </ul>
-            </p>
-            <button><a href="/about" style="color: white;"> Learn More</a></button>
-        </div>
-        <div class="right-side">
-            <img src="/static/Our-features.svg" alt="Illustration" height="500px" width="500px">
-        </div>
+    <div class="credit">
+      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
     </div>
+  </footer>
 
+  <!--footer ends-->
 
-    <!-- our special feature end from here -->
-    <section class="process">
-        <h2>Apply a job in <span>4 Easy Steps</span> </h1>
-            <div class="step">
-                <div class="number"></div>
-                <h2>Create an Account</h2>
-                <p>Create an account with us, it's easy and fast.
-                    Get access to all the latest job listings and
-                    manage your job applications.</p>
-            </div>
-            <div class="step">
-                <div class="number"></div>
-                <h2>Search Jobs</h2>
-                <p>
-                    Use our powerful search engine to find the
-                    perfect job for you. Search by keyword,
-                    location, and more.
-                </p>
-            </div>
-            <div class="step">
-                <div class="number"></div>
-                <h2>Upload Your CV/Resume</h2>
-                <p>
-                    Upload your CV/Resume and get noticed
-                    by potential employers.
-                </p>
-            </div>
-            <div class="step">
-                <div class="number"></div>
-                <h2>Apply for Jobs</h2>
-                <p>
-                    Use our easy application process to apply
-                    for your dream job.
-                </p>
-            </div>
-    </section>
+  <!-- custom js file link  -->
 
-    <div class="container">
-        <div class="left-side">
-            <img src="/static/Job-hunt.svg" alt="Illustration" height="500px" width="500px">
-        </div>
-        <div class="right-side">
-            <h1>Find your perfect job based on your interest</h1>
-            <ul>
-                <li>Find full-time jobs and internships that are perfect for you.</li>
-                <li>Get personalized job recomandations directly.</li>
-                <li>Explore job roles based of your study and get best job opportunities.</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- newsletter start from here -->
-    <div class="newsletter-container">
-        <div class="close-button">
-        </div>
-        <div class="content">
-            <div class="icon">
-            </div>
-            <h2>Get Latest Job Updates</h2>
-            <p>You will never miss our podcasts, latest news etc. Our newsletter is once a week, every Thursday.</p>
-            <input type="email" placeholder="user@yoursite.com">
-            <button>Subscribe</button>
-        </div>
-    </div>
-    <!-- newsletter end here -->
-
-    <!-- footer starts-->
-    <footer class="footer">
-        <div class="footer-logo">
-            <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
-                    style="color: cadetblue;"></i> JobManch</a>
-            <section class="grid">
-
-                <div class="box">
-                    <h3>Quick links</h3>
-                    <a href="/index"><i class="fas fa-angle-right"></i> home</a>
-                    <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
-                    <a href="#"><i class="fas fa-angle-right"></i> filter search</a>
-                </div>
-
-                <div class="box">
-                    <h3>extra links</h3>
-                    <a href="#"><i class="fas fa-angle-right"></i> account</a>
-                    <a href="/login"><i class="fas fa-angle-right"></i> login</a>
-                    <a href="/register"><i class="fas fa-angle-right"></i> register</a>
-                    <!-- <a href="#"><i class="fas fa-angle-right"></i> dashboard</a> -->
-                </div>
-                <!-- <h4>copyright @2024 by <span>JobManch</span> | all rights reserved !</h4> -->
-        </div>
-        <div class="footer-social">
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/static/facebook.jpg" alt="Facebook" class="social-icon">
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/static/twitter.png" alt="Twitter" class="social-icon">
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/static/linkedin.png" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                <img src="/static/" alt="Youtube" class="social-icon">
-            </a>
-        </div>
-        </section>
-
-        <div class="credit">&copy; copyright @2024 by <span>JobManch</span> | all rights reserved !</div>
-    </footer>
-
-    <script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

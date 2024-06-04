@@ -2,672 +2,292 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jobs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
 
-  <!-- custom css file link -->
-  <link rel="stylesheet" href="/static/style.css" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
-  <!-- header section start-->
 
-  <header class="header">
-    <section class="flex">
-      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+    <!-- header section start-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+            <nav class="navbar">
+                <a href="/index">Home</a>
+                <a href="/jobs">Jobs</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/login">Log In / Register</a>
+            </nav>
+        </section>
+    </header>
+    <!-- header section ends-->
 
-      <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
-          style="color: cadetblue;"></i> JobManch</a>
-      <nav class="navbar">
-        <a href="/index">Home</a>
-        <a href="/jobs">Jobs</a>
-      </nav>
-    </section>
-  </header>
-
-  <!-- header section ends-->
-
-  <!-- job filter start-->
-
-
-
-  <!-- JOB filter ends-->
-
-  <!-- jobs section starts-->
-
-  <section class="jobs-container" style="margin-top: 100px;">
-    <h1 class="heading">Recent jobs</h1>
-    <div class="box-container">
-      <div class="box">
-        <div class="company">
-          <img src="/static/amazon.png" alt="" />
-          <div>
-            <h3>Amazon</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/facebook.jpg" alt="" />
-          <div>
-            <h3>facebook</h3>
-            <span>3 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+    <!-- jobs section starts-->
 
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/flipkart.png" alt="" />
-          <div>
-            <h3>Flipkart</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">Graphic designer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+    <section class="jobs-container" style="margin-top: 10%;">
+        <h1 class="heading">Top Listings</h1>
+        <h2 style="margin-left: 43%;">Unstop.com</h2>
+        <div class="box-container">
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/google.png" alt="" />
-          <div>
-            <h3>Google</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">software engineer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/amazon.png" alt="">
+                    <div>
+                        <h3>Amazon</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">senior web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div1" class="btn">view details</a>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/netflix.png" alt="" />
-          <div>
-            <h3>Netflix</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">software engineer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+                    <button id="button1" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/nike.png" alt="" />
-          <div>
-            <h3>Nike</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/coco cola.png" alt="" />
-          <div>
-            <h3>coco-cola</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/facebook.jpg" alt="">
+                    <div>
+                        <h3>facebook</h3>
+                        <span>3 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">senior web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>pune, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>60k - 80k</span></p>
+                    <p><i class="fas fa-briefcase"><span>full-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div2" class="btn">view details</a>
+                    <button id="button2" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/uber.png" alt="" />
-          <div>
-            <h3>Uber</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/flipkart.png" alt="">
+                    <div>
+                        <h3>Flipkart</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">Graphic designer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div3" class="btn">view details</a>
+                    <button id="button3" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/instagram.png" alt="" />
-          <div>
-            <h3>Instagram</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <br>
+            <h2 style="margin-left: 30%;">Indeed.com</h2>
+            <br>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/tata.png" alt="" />
-          <div>
-            <h3>Tata</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/google.png" alt="">
+                    <div>
+                        <h3>Google</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">software engineer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>bengaluru, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div4" class="btn">view details</a>
+                    <button id="button4" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/linkedin.png" alt="" />
-          <div>
-            <h3>Linkedin</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/netflix.png" alt="">
+                    <div>
+                        <h3>Netflix</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">software engineer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div5" class="btn">view details</a>
+                    <button id="button5" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/nike.png" alt="">
+                    <div>
+                        <h3>Nike</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">Graduate Trainee</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>60k - 70k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div6" class="btn">view details</a>
+                    <button id="button6" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
 
-      <!-- <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
+            <br>
+            <h2 style="margin-left: 20%;">Glassdoor.com</h2>
+            <br>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/coco cola.png" alt="">
+                    <div>
+                        <h3>Coca Cola</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">Back End Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div7" class="btn">view details</a>
+                    <button id="button7" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/uber.png" alt="">
+                    <div>
+                        <h3>Uber</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">Front End Developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div8" class="btn">view details</a>
+                    <button id="button8" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="company">
+                    <img src="/static/instagram.png" alt="">
+                    <div>
+                        <h3>IInstagram</h3>
+                        <span>2 days ago</span>
+                    </div>
+                </div>
+                <h3 class="job-title">Fullstack developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i><span>hyderabad, india</span></p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"><span>part-time</span></i></p>
+                    <p><i class="fas fa-clock"><span>day-shift</span></i></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="/jobDetail#div9" class="btn">view details</a>
+                    <button id="button9" type="submit" class="fas fa-heart" name="save"></button>
+                </div>
+            </div>
         </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
 
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
+        <div class="view-btn">
+            <a href="/display" class="btn">view all</a>
         </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="company">
-          <img src="/static/twitter.png" alt="" />
-          <div>
-            <h3>Twitter</h3>
-            <span>2 days ago</span>
-          </div>
-        </div>
-        <h3 class="job-title">senior web developer</h3>
-        <h1>Details</h1>
-        <div class="flex-btn">
-          <a href="/display" class="btn">view details</a>
-          <button type="submit" class="fas fa-heart" name="save"></button>
-        </div>
-      </div>
-    </div> -->
-
-  </section>
-  <div class="ViewMoreBtn">
-    <a href="/display" style="font-size: large;color: black;">view more</a>
-  </div>
-
-  <!-- jobs section ends-->
-
-  <!-- footer starts-->
-
-  <footer class="footer">
-    <section class="grid">
-      <div class="box">
-        <h3>Quick links</h3>
-        <a href="/index"><i class="fas fa-angle-right"></i> home</a>
-        <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
-        <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
-        <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
-      </div>
-
-      <div class="box">
-        <h3>extra links</h3>
-        <a href="#"><i class="fas fa-angle-right"></i> account</a>
-        <a href="/login"><i class="fas fa-angle-right"></i> login</a>
-        <a href="/register"><i class="fas fa-angle-right"></i> register</a>
-      </div>
     </section>
 
-    <div class="credit">
-      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
-    </div>
-  </footer>
 
-  <!--footer ends-->
+    <!-- jobs section ends-->
 
-  <!-- custom js file link  -->
+    <!-- footer starts-->
 
-  <script src="script.js"></script>
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <a href="index.html" class="logo"><i class="fas fa-briefcase"></i> <b>JobManch</b>
+                </a>
+            </div>
 
-  <script>
-    let dropdown_items = document.querySelectorAll(
-      ".job-filter form .dropdown-container .dropdown .lists .items"
-    );
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="/index"><i class="fas fa-angle-right"></i> home</a>
+                <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
+                <a href="/contact"><i class="fas fa-angle-right"></i>Contact</a>
+                <a href="/about"><i class="fas fa-angle-right"></i>About</a>
+                <!-- <a href="#"><i class="fas fa-angle-right"></i> filter search</a> -->
+            </div>
 
-    dropdown_items.forEach((items) => {
-      items.onclick = () => {
-        items_parent = items.parentElement.parentElement;
-        let output = items_parent.querySelector(".output");
-        output.value = items.innerText;
-      };
-    });
-  </script>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="/login"><i class="fas fa-angle-right"></i> login</a>
+                <a href="/register"><i class="fas fa-angle-right"></i> register</a>
+                <!-- <a href="#"><i class="fas fa-angle-right"></i> dashboard</a> -->
+            </div>
+            <div class="follow-us">
+                <h3>Follow us</h3>
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
+
+        <div class="credit">
+            &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
+        </div>
+    </footer>
+
+    <!--footer ends-->
+
+
+    <!-- custom js file link  -->
+
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>

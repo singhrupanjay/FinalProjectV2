@@ -2,97 +2,122 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
 
-  <!-- custom css file link -->
-  <link rel="stylesheet" href="/static/style.css" />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
+
+<style>
+    .input {
+        padding: 12px 20px;
+        border: 2px solid black;
+        border-radius: 4px;
+        width: 50%;
+    }
+</style>
+
 <body>
-  <!-- header section start-->
 
-  <header class="header">
-    <section class="flex">
-      <div id="menu-btn" class="fas fa-bars-staggered"></div>
+    <!-- header section start-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+            <nav class="navbar">
+                <a href="/index">Home</a>
+                <a href="/jobs">Jobs</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/login">Log In / Register</a>
+            </nav>
+        </section>
+    </header>
+    <!-- header section ends-->
 
-      <a href="/index" class="logo"><i class="fas fa-briefcase"></i> JobManch</a>
-
-      <nav class="navbar">
-        <a href="/index">Home</a>
-        <a href="/jobs">Jobs</a>
-        <a href="/login">Account</a>
-      </nav>
-    </section>
-  </header>
-
-  <!-- header section ends-->
-
-  <!-- ACCOUNT SECTION STARTS-->
-
-  <!-- Display this section if user has entered data -->
-
-  <div class="account-form-container">
-    <section class="account-form">
-      <form action="" method="post">
-        <img src="/static/register_img.svg" alt="register_img" style="width: 50%; height: 50%;">
-        <h3>create new account!</h3>
-        <input type="text" required name="name" maxlength="50" placeholder="Enter your name" class="input" />
-        <input type="email" required name="email" maxlength="50" placeholder="Enter your email" class="input" />
-        <input type="password" required name="pass" maxlength="20" placeholder="Enter your password" class="input" />
-        <input type="password" required name="c_pass" maxlength="20" placeholder="Confirm your password"
-          class="input" />
-        <p>Already have an account? <a href="/login">Login now</a></p>
-        <input type="submit" value="login now" name="submit" class="btn" />
-        <p>Or Register with:</p>
-        <div class="social-login">
-          <button type="button" class="btn google">
-            <i class="fab fa-google"></i> Google
-          </button>
-          <button type="button" class="btn github">
-            <i class="fab fa-github"></i> GitHub
-          </button>
-          <button type="button" class="btn linkedin">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </button>
-        </div>
-      </form>
-    </section>
-  </div>
-
-  <!-- ACCOUNT SECTION END-->
-
-  <!-- footer starts-->
-
-  <footer class="footer">
-    <section class="grid">
-      <div class="box">
-        <h3>Quick links</h3>
-        <a href="/index"><i class="fas fa-angle-right"></i> home</a>
-        <a href="/about"><i class="fas fa-angle-right"></i> about us</a>
-        <a href="/jobs"><i class="fas fa-angle-right"></i> jobs</a>
-        <a href="/contact"><i class="fas fa-angle-right"></i> contact us</a>
-      </div>
-
-      <div class="box">
-        <h3>extra links</h3>
-        <a href="#"><i class="fas fa-angle-right"></i> account</a>
-        <a href="/login"><i class="fas fa-angle-right"></i> login</a>
-        <a href="/register"><i class="fas fa-angle-right"></i> register</a>
-      </div>
-    </section>
-
-    <div class="credit">
-      &copy; copyright @2024 by <span>JobManch</span> | all rights reserved !
+    <!-- ACCOUNT SECTION STARTS-->
+    <div class="account-form-container">
+        <section class="account-form">
+            <form action="" method="post">
+                <h3>create new account!</h3>
+                <input type="text" required name="name" maxlength="50" placeholder="Enter your name" class="input">
+                <input type="email" required name="email" maxlength="50" placeholder="Enter your email" class="input"
+                    style="padding: 12px 20px; border: 2px solid black; border-radius: 4px;">
+                <input type="password" required name="pass" maxlength="20" placeholder="Enter your password"
+                    class="input">
+                <input type="password" required name="c_pass" maxlength="20" placeholder="Confirm your password"
+                    class="input">
+                <p>Already have an account? <a href="/login">Login now</a></p>
+                <input type="submit" value="login now" name="submit" class="btn">
+            </form>
+        </section>
     </div>
-  </footer>
+    <!-- ACCOUNT SECTION END-->
 
-  <!--footer ends-->
 
-  <!-- custom js file link  -->
 
-  <script src="script.js"></script>
+
+
+
+
+
+
+
+    <!-- footer starts-->
+
+    <footer class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <a href="index.html" class="logo"><i class="fas fa-briefcase"></i> JobManch</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i> home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i> about us</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i> jobs</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i> contact us</a>
+                <a href="#"><i class="fas fa-angle-right"></i> filter search</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> account</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i> login</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i> register</a>
+                <a href="#"><i class="fas fa-angle-right"></i> dashboard</a>
+                <div class="follow-us">
+                    <h3>Follow us</h3>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="credit">&copy; copyright @2024 by <span>JobManch</span> | all rights reserved !</div>
+    </footer>
+
+
+    <!--footer ends-->
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

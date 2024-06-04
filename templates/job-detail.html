@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Description</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .job-description {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .job-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .job-info div {
+            flex-basis: 50%;
+        }
+
+        .job-description p {
+            margin-bottom: 10px;
+        }
+
+        .apply-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: #1D3557;
+            cursor: pointer;
+        }
+
+        .apply-button:hover {
+            background-color: #A8DADC;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        ul {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- header section start-->
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+            <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
+            <nav class="navbar">
+                <a href="/index">Home</a>
+                <a href="/jobs">Jobs</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/login">Log In / Register</a>
+            </nav>
+        </section>
+    </header>
+    <!-- header section ends-->
+
+
+    <div id="div1" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[0]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[0]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[0]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[0]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                    Ranchi.Jh
+                    3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+            <!-- <button onclick="showDiv(1)" style="margin-top: 100px;">Button 2</button> -->
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li> understanding of HTML, CSS, and JavaScript </li>
+            <li>Proficiency in using design software such as Adobe Photoshop, Illustrator, and Figma</li>
+            <li>Experience with responsive web design principles</li>
+            <li>Basic understanding of SEO concepts and best practices</li>
+            <li>Excellent communication and collaboration skills</li>
+            <li>Ability to work independently and meet deadlines</li>
+            <li>Passion for web design and a strong desire to learn and grow</li>
+            <li>Open to all students and recent graduates</li>
+            <li>No prior experience required</li>
+            <li>Must be passionate about web design and eager to learn</li>
+        </ul>
+
+        <button class="apply-button"> <a href="https://unstop.com/jobs/software-development-engineer-amazon-401679" style="color: white;">Apply Now</a> </button>
+    </div>
+
+    <div id="div2" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[1]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[1]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[1]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[1]['salary'] }}<br>
+                </li>
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <ul>
+            <h4>Skills</h4>
+            <li>You have 3+ years of work experience as part of a core engineering team at a product company</li>
+            <li>Deep understanding and experience working with JavaScript using ES6 and above or TypeScript</li>
+            <li>Experience building robust customer-facing frontend experiences using React and Redux (Toolkit) /
+                Angular /
+                Vue</li>
+            <li >Strong understanding of semantic HTML5 and CSS3</li>
+            <li>Experience in frameworks such as Bootstrap, Tailwind, and CSS pre-processors such as SASS and LESS</li>
+            <li>Familiarity with RESTful APIs</li>
+            <li>Familiarity with modern front-end build pipelines and tools</li>
+            <li>Experience with common front-end development tools such as Babel, Webpack, NPM, etc.</li>
+            <li>Good problem-solving skills and understanding of data structures and algorithms</li>
+        </ul>
+        <button class="apply-button"> <a href="https://unstop.com/jobs/internal-software-engineer-facebook-181894" style="color: white;">Apply Now</a> </button>
+    </div>
+
+    <div id="div3" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[2]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[2]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[2]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[2]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                    Ranchi.Jh
+                    3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Bachelor's degree in Graphic Design, Visual Arts, or related field.</li>
+            <li>Proven experience of at least 1 year in graphic design, with a strong portfolio showcasing social media
+                campaigns and creative projects. Crypto experience will be an added advantage</li>
+            <li>Proficiency in Adobe Creative Suite, particularly Adobe Photoshop, Illustrator, and After Effects.</li>
+            <li>Solid understanding of social media platforms, their features, and best practices for content creation
+                and engagement.</li>
+            <li>Excellent communication skills with the ability to effectively articulate creative ideas and concepts.
+            </li>
+            <li>Strong attention to detail and ability to work in a fast-paced environment with tight deadlines.</li>
+        </ul>
+
+        <button class="apply-button"> <a href="https://unstop.com/jobs/content-designer-flipkart-260199" style="color: white;">Apply Now</a> </button>
+    </div>
+
+    <div id="div4" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[3]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[3]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[3]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[3]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Good knowledge of Java and Object-Oriented Programming</li>
+            <li>Prior Experience in working with SQL/Non-SQL databases, preferably in Oracle</li>
+            <li>Experience in Rest-based service development</li>
+            <li>Knowledge of multi-threaded, asynchronous code</li>
+            <li>Skilled at writing Unit and Automation tests</li>
+        </ul>
+        <button class="apply-button"> <a href="https://www.indeed.com/rc/clk?jk=b1f7b7eeeea1b3a8&bb=z52RRMQCs8MPgdmXTFOxKfJLMiN4yi17VzB4eat4742WtVkRPoZBXKBwG-rKk_kye80YOyKsxI6eQXV0BcLLTSYRqmfHrvWLLpQRiGM3HCgKBw0TaloQiw%3D%3D&xkcb=SoBL67M3AyF1GTxRoh0KbzkdCdPP&fccid=a5b4499d9e91a5c6&vjs=3" style="color: white;"> Apply Now </a> </button>
+    </div>
+
+    <div id="div5" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[4]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[4]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[4]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[4]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Bachelor’s degree or equivalent practical experience.</li>
+            <li>2 years of experience with software development in one or more programming languages, or 1 year of
+                experience with an advanced degree.</li>
+            <li>2 years of experience with data structures or algorithms in either an academic or industry setting</li>
+        </ul>
+        <button class="apply-button">Apply Now</button>
+    </div>
+
+    <div id="div6" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[5]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[5]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[5]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[5]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Diploma Engineer in Mechanical or Electrical field required</li>
+            <li>Prefer Building Automation Systems (BAS) with successful experience and demonstrated competencies in the
+                components of a BAS including controllers, sensors, output devices, communications protocols, and user
+                interface</li>
+            <li>Prefer knowledge of engineering fundamentals, HVAC systems, and mechanical systems</li>
+            <li>Prefer the ability to read and interpret mechanical and building automation bid specifications</li>
+            <li>Prefer understanding of buildings and ability to identify HVAC system equipment requiring automation
+            </li>
+        </ul>
+        <button class="apply-button">Apply Now</button>
+    </div>
+
+    <div id="div7" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[6]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[6]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[6]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[6]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Proven experience as a Back-End Developer with expertise in Java, Python, or Node.js.</li>
+            <li>Strong proficiency in building RESTful APIs.</li>
+            <li>Experience with SQL or NoSQL databases.</li>
+            <li>Familiarity with HTML, CSS, and JavaScript.</li>
+            <li>Solid understanding of RESTful API design principles.</li>
+        </ul>
+        <button class="apply-button">Apply Now</button>
+    </div>
+
+    <div id="div8" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[7]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[7]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[7]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[7]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Realtime application using Pusher/similar services</li>
+            <li>Must be familiar with using most design patterns</li>
+            <li>Good knowledge of inheritance, use of a single source of truth</li>
+            <li>Familiarity with databases MySQL, Redis, MongoDB, web servers like Apache and nginx</li>
+            <li>Must have experience with GitHub or GitLab</li>
+        </ul>
+        <button class="apply-button">Apply Now</button>
+    </div>
+
+    <div id="div9" class="job-description" style="margin-top: 15%;">
+        <div class="job-info">
+            <div>
+                <li style="font-size: large;text-decoration: none;">
+                    <!--from list job_list printing only the oth index elements -->
+                    <h1 class="job-title">{{ job_list[8]['role'] }}</h1>
+                    <strong>Company:</strong> {{ job_list[8]['company'] }}<br>
+                    <strong>Location:</strong> {{ job_list[8]['location'] }}<br>
+                    <strong>Salary:</strong> {{ job_list[8]['salary'] }}<br>
+                </li>
+                <!-- JobManch
+                Ranchi.Jh
+                3.5 - 5LPA -->
+            </div>
+            <div>
+                <p><strong>Experience:</strong> 3+ years</p>
+                <p><strong>Education:</strong> Bachelor's degree in Computer Science or related field</p>
+            </div>
+        </div>
+        <h4>Skills</h4>
+        <ul>
+            <li>Proven experience as a Full Stack Developer or similar role.</li>
+            <li>Proficiency in React Native, Node.js, and JavaScript.</li>
+            <li>Strong understanding of web and mobile development best practices.</li>
+            <li>Familiarity with RESTful APIs and GraphQL.</li>
+            <li>Experience with database systems such as MongoDB, MySQL, or PostgreSQL.</li>
+        </ul>
+        <button class="apply-button">Apply Now</button>
+    </div>
+
+
+    <script>
+        const applyButton = document.querySelector('.apply-button');
+
+        applyButton.addEventListener('click', () => {
+            alert('Application submitted!');
+        });
+
+        function showDiv(divNumber) {
+            // Hide all divs
+            for (let i = 1; i <= 9; i++) {
+                document.getElementById('div' + i).classList.add('hidden');
+            }
+
+            // Show the selected div
+            document.getElementById('div' + divNumber).classList.remove('hidden');
+        }
+
+        window.onload = function () {
+            document.getElementById('div1').click();
+        };
+
+    </script>
+
+
+
+</body>
+
+</html>

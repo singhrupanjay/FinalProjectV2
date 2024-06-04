@@ -53,6 +53,7 @@
         font-weight: bold;
         text-align: left;
         color: #000000;
+        font-size:small;
 
     }
 
@@ -74,25 +75,25 @@
         color: #060202;
         margin-bottom: 5%;
     }
-
-
 </style>
 
 <body>
 
-    <header class="header" style="margin-bottom: 20%;">
+    <!-- header section start-->
+    <header class="header">
         <section class="flex">
             <div id="menu-btn" class="fas fa-bars-staggered"></div>
-
-            <a href="/index" class="logo" style="color: cadetblue; padding-top: 10px;"><i class="fas fa-briefcase"
-                    style="color: cadetblue;"></i> JobManch</a>
-
+            <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
             <nav class="navbar">
                 <a href="/index">Home</a>
                 <a href="/jobs">Jobs</a>
+                <a href="/about">About Us</a>
+                <a href="/contact">Contact Us</a>
+                <a href="/login">Log In / Register</a>
             </nav>
         </section>
     </header>
+    <!-- header section ends-->
 
 
     <h1 style="text-align: center; color:black; margin-top: 10%;">ALL JOBS</h1>
@@ -111,7 +112,8 @@
             <li><i class="fas fa-indian-rupee-sign"></i> {{item.salary}}</li>
             <li><i class="fas fa-briefcase"></i> {{item.job_type}}</li>
             <li><i class="fas fa-clock"></i> {{item.working_shift }}</li>
-            <button style="width: fit-content;height: 30px;margin-left: 170px;margin-top: 10px;"><a href="" style="color: #000000;">View Job</a></button>
+            <!-- <button style="width: fit-content;height: 30px;margin-left: 170px;margin-top: 10px;"><a href=""
+                    style="color: #000000;">View Job</a></button> -->
         </div>
 
         {%endfor%}
@@ -139,4 +141,3 @@
 </body>
 
 </html>
-
