@@ -19,6 +19,7 @@ user_collection = user_data.user_collection
 user_credentials = user_data.user_credentials
 
 
+
 #CREATING DATABASE JobData
 JobData = client.JobData
 #CREATING COLLECTION jobDetails under DATABASE JobData
