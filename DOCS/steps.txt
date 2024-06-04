@@ -55,3 +55,5 @@ IMPORTANT
         the name of the file of your project which is main.py in this case and,
         name of the variable that contains the flask application that we want to run.
          - > $gunicorn app:app
+
+Choose the plan that suits you
