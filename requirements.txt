@@ -1,5 +1,4 @@
 flask
-python
 gunicorn
 flask_pymongo
 
