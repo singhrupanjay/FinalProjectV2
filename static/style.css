@@ -1404,28 +1404,67 @@ button[type="submit"]:hover {
 }
 
 /* rupanjay invalid login.html */
-.success-message {
-  text-align: center;
-  margin-left: auto;
+/* .heading1{
+  font-size: ;
+} */
+/* .success-message {
+  text-align: center; */
+/* margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   width: 30%;
   height: 30%;
-  border-radius: 25px;
-  
+  border-radius: 25px; */
+/* margin-top: 5rem;
+  text-align: center; */
+
+/* } */
+
+/* @media only screen and (max-width: 480px) {
+  .success-message img {
+    width: 100%;
+  }
+  .success-message {
+    margin-top: 2rem;
+  }
+} */
+
+.heading1 {
+  margin-top: 2.5rem;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.success-message img {
+  width: 30%;
+  height: 50%;
+}
+
+.success-message {
+  margin-top: 5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-  .success-message img {
-    width: 50%;
-    height: 30%;
+  .heading {
+    font-size: 0.8rem;
   }
+
+  .success-message img {
+    width: 100%;
+
+  }
+
   .success-message {
     margin-top: 2rem;
   }
 }
 
-.fail-message {
+/* .fail-message {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -1433,16 +1472,40 @@ button[type="submit"]:hover {
   width: 30%;
   height: 30%;
   border-radius: 25px;
-  
 }
 
 @media only screen and (max-width: 768px) {
   .fail-message img {
-    width: 50%;
-    height: 30%;
+    width: 100%; 
   }
   .fail-message {
     margin-top: 2rem;
   }
+} */
+
+.fail-message img {
+  width: 30%;
+  height: 50%;
 }
+
+.fail-message {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 0.8rem;
+  }
+
+  .fail-message img {
+    width: 100%;
+
+  }
+
+  .fail-message {
+    margin-top: 2rem;
+  }
+}
+
 /* rupanjay invalid login.html */
