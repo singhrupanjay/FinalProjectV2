@@ -220,7 +220,7 @@ def register():
  
         if name or email or password:
             # Insert data into MongoDB
-            # user_credentials.insert_one({"name": name, "email": email, "password": password })
+            user_credentials.insert_one({"name": name, "email": email, "password": password })
             return redirect('/registersuccess')
         else:
             return render_template('register.html')
