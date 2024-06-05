@@ -93,7 +93,6 @@ def find_data():
 # find_data()
 
 #DASHBOARD
-
 #UPDATING DATA
 # def updateDataById(user_id):
 #     from bson.objectid import ObjectId #importing id of user object
@@ -180,12 +179,26 @@ def JobDetail():
 def profile():
     return render_template('profile.html')
 
-@app.route('/success')
-def success():
-    return render_template('success.html')
+@app.route('/loginsuccess')
+def Lsuccess():
+    status = "Login"
+    message = "Successfully Logged In!"
+    option = ""
+    return render_template('success.html',status = status, message = message,option = option)
+
 @app.route('/fail')
 def fail():
-    return render_template('Fail.html')
+    status = "Registered"
+    message = "Successfully Registered"
+    option = "Register Again"
+    return render_template('Fail.html', status = status, message = message, option = option)
+
+@app.route('/registersuccess')
+def Rsuccess():
+    status = "Registration"
+    message = "Successfully Registered!"
+    option = "Register Again"
+    return render_template('success.html', status = status, message = message, option = option)
 
 ### DISPLAYING TEST DATA
 @app.route('/display')
@@ -193,16 +206,6 @@ def display_data():
     jobData = jobDetails.find()  # Fetch all documents from the collection
 
     return render_template('AllJobs.html', data=jobData, count = 0)
-
-
-# @app.route('/h3content', methods=['POST', 'GET'])
-# def save_h3_content():
-#     data = request.get_json()
-#     h3_content = data.get('h3Content')
-#     # Do something with h3_content (e.g., store it in a variable or database)
-#     return render_template("testing2.html", h3_content = h3_content)
-
-
 
 
 ### TAKING TEST INPUT AND STORING ON MONGODB in register
@@ -213,12 +216,12 @@ def register():
         # Get data from the form
         name = request.form.get("name")
         email = request.form.get("email")
-        password = request.form.get("password")
+        password = request.form.get("pass")
  
         if name or email or password:
             # Insert data into MongoDB
             # user_credentials.insert_one({"name": name, "email": email, "password": password })
-            return render_template('success.html')
+            return redirect('/registersuccess')
         else:
             return render_template('register.html')
 
@@ -236,9 +239,9 @@ def login():
         user1 = user_data.user_credentials.find_one({'email': email, 'password': password})
 
         if user1:
-            return render_template("success.html")
+            return redirect("/loginsuccess")
         else:
-            return render_template("Fail.html")
+            return redirect("/fail")
 
     return render_template('login.html')
 
