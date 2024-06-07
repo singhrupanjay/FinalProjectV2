@@ -3,6 +3,7 @@ from flask_pymongo import MongoClient
 # from flask_pymongo import PyMongo
 from flask import render_template
 from flask import request, redirect, url_for, session
+from flask_login import login_required
 import pprint
 
 app = Flask(__name__)
@@ -144,8 +145,6 @@ def home():
 @app.route('/jobs')
 def jobs():
     return render_template('jobs.html')
-
-
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
