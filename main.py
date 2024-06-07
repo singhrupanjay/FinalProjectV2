@@ -146,6 +146,7 @@ def home():
 def jobs():
     return render_template('jobs.html')
 
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
