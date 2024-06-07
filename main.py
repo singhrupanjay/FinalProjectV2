@@ -19,13 +19,11 @@ user_collection = user_data.user_collection
 user_credentials = user_data.user_credentials
 
 
-
 #CREATING DATABASE JobData
 JobData = client.JobData
 #CREATING COLLECTION jobDetails under DATABASE JobData
 jobDetails = JobData.jobDetails
 
-#
 
 #DASHBOARD
 #INSERT DOCUMENT USERDATA
@@ -73,24 +71,30 @@ def create_jobdetails_documents():
 #CALLING FUNCTION TO INSERT User Data
 # create_jobdetails_documents()
 
+
+
 # USING PRETTYPRINT TO GET A CUSTOMIZED AND CLEAN OUTPUT 
-printer = pprint.PrettyPrinter()
+# printer = pprint.PrettyPrinter()
+
 
 # def display_UserData():
 #     users = jobDetails.find() #.find() method to find all the data in the user_data collection
 
 #     for user in users:
 #         printer.pprint(user)
-
 # display_UserData()
+
+
 
 #DASHBOARD
 # SEARCH FOR A SPECIFIC DATA IN DATABASE
-def find_data():
-    data = jobDetails.find()
-    printer.pprint(list(data))
+# def find_data():
+#     data = jobDetails.find()
+    # printer.pprint(list(data))
 
 # find_data()
+
+
 
 #DASHBOARD
 #UPDATING DATA
@@ -115,8 +119,6 @@ def find_data():
 
 
 
-
-
 #DASHBOARD
 #DELETING DOCUMENTS if a particular field exisits
 
@@ -126,13 +128,10 @@ def find_data():
     # _id = "_id"
 #     jobDetails.delete_many({"_id":_id})
     # jobDetails.delete_many({_id:{'$exists':True}})
-
 # delete_method("664ac557970500d9e284c9b0")
     # field_name = "Job_Role"
     # jobDetails.delete_many({field_name: {'$exists': True}})
 # delete_method()
-
-
 
 
 @app.route('/')
@@ -177,7 +176,7 @@ def JobDetail():
 #profile Page
 @app.route('/profile')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', name = name, email = email)
 
 @app.route('/loginsuccess')
 def Lsuccess():
@@ -208,6 +207,7 @@ def display_data():
     return render_template('AllJobs.html', data=jobData, count = 0)
 
 
+
 ### TAKING TEST INPUT AND STORING ON MONGODB in register
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -227,6 +227,9 @@ def register():
 
 
     return render_template('register.html')
+
+global name
+global email
 
 ### USER AUTHENTICATION in login
 @app.route('/login', methods=['GET', 'POST'])

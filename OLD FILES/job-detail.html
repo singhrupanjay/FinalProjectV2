@@ -43,9 +43,13 @@
 
         .apply-button {
             display: block;
-            width: 100%;
+            width: 9rem;
             padding: 10px;
             border: none;
+            margin-left: 45%;
+            margin-top: 5%;
+            text-align: center;
+            justify-content: center;
             border-radius: 5px;
             color: #ffffff;
             background-color: #1D3557;
@@ -64,35 +68,13 @@
             font-size: small;
         }
 
-        @media (max-width: 768px) {
-            .job-info {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .job-info>div {
-                width: 100%;
-            }
-
-            .job-description ul {
-                margin-top: 1rem;
-            }
-
-            .job-title {
-                font-size: 1.5rem;
-            }
-
-            .job-description ul {
-                font-size: 0.9rem;
-            }
-
-            .job-description ul li {
-                margin-bottom: 0.5rem;
-            }
-
+        a {
+            color: white;
         }
     </style>
 </head>
+
+
 
 <body>
 
@@ -107,7 +89,7 @@
                 <a href="/jobs">Jobs</a>
                 <a href="/about">About Us</a>
                 <a href="/contact">Contact Us</a>
-                <a href="/profile">Profile</a>
+                <a href="/login">Log In / Register</a>
             </nav>
         </section>
     </header>
@@ -147,10 +129,10 @@
             <li>No prior experience required</li>
             <li>Must be passionate about web design and eager to learn</li>
         </ul>
-
-        <button class="apply-button"> <a href="https://unstop.com/jobs/software-development-engineer-amazon-401679"
-                style="color: white;">Apply Now</a> </button>
     </div>
+
+    <button class="apply-button"> <a href="https://unstop.com/jobs/software-development-engineer-amazon-401679"
+            style="color: white;">Apply Now</a> </button>
 
     <div id="div2" class="job-description" style="margin-top: 15%;">
         <div class="job-info">
