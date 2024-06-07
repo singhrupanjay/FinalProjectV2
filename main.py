@@ -1,4 +1,5 @@
-from flask import Flask,jsonify
+from flask import Flask
+from flask_login import login_required
 from flask_pymongo import MongoClient
 # from flask_pymongo import PyMongo
 from flask import render_template
@@ -143,6 +144,7 @@ def home():
     return render_template('index.html')
 
 @app.route('/jobs')
+@login_required
 def jobs():
     return render_template('jobs.html')
 
@@ -153,11 +155,13 @@ def contact():
 def about():
     return render_template('about.html')
 @app.route('/dashboard')
+@login_required
 def dash():
     return render_template('dashboard.html')
 
 #Job-Detail Page
 @app.route('/jobDetail')
+@login_required
 def JobDetail():
     job_details = jobDetails.find()
 
@@ -173,12 +177,15 @@ def JobDetail():
     job_list=job_list
 
     return render_template('job-detail.html', job_list = job_list)
+
 #profile Page
 @app.route('/profile')
+@login_required
 def profile():
     return render_template('profile.html', name = name, email = email)
 
 @app.route('/loginsuccess')
+@login_required
 def Lsuccess():
     status = "Login"
     message = "Successfully Logged In!"
@@ -186,6 +193,7 @@ def Lsuccess():
     return render_template('success.html',status = status, message = message,option = option)
 
 @app.route('/fail')
+@login_required
 def fail():
     status = "Registered"
     message = "Successfully Registered"
@@ -193,6 +201,7 @@ def fail():
     return render_template('Fail.html', status = status, message = message, option = option)
 
 @app.route('/registersuccess')
+@login_required
 def Rsuccess():
     status = "Registration"
     message = "Successfully Registered!"
@@ -201,6 +210,7 @@ def Rsuccess():
 
 ### DISPLAYING TEST DATA
 @app.route('/display')
+@login_required
 def display_data():
     jobData = jobDetails.find()  # Fetch all documents from the collection
 
