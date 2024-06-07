@@ -1,5 +1,4 @@
 flask
 gunicorn
 flask_pymongo
-flask-login
 
