@@ -51,18 +51,17 @@ def create_jobdetails_documents():
     Company  = ["Amazon", "facebook", "Flipkart", "Google", "Netflix", "Nike","coco-cola", "Uber", "Instagram", "Tata", "Linkedin", "Twitter"]
     Uploaded  = ["2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago","2 days ago" ]
     JobRole = ["senior web developer","SDE1", "Graphic designer", "software engineer", "software engineer", "Graduate Trainee",
-                "Back end developer", "Front end developer", "Fullstack developer", "SOC analyst", "PHP developer", "Business Analys"]
+                "Back end developer", "Front end developer", "Fullstack developer", "SOC analyst", "PHP developer", "Business Analyst"]
     Location  = [ "hyderabad, india"," pune, india"," hyderabad, india"," bengaluru, india", "hyderabad, india"," hyderabad, india"," hyderabad, india"," hyderabad, india"," hyderabad, india"," hyderabad, india"," hyderabad, india"," hyderabad, india"] 
     Salary  = [ "10k - 20k","20k - 30k","30k - 40k","40k - 50k","50k - 60k","60k - 70k","70k - 80k","80k - 90k","90k - 100k","16k - 50k","10k - 20k","10k - 20k"  ]
     JobType = [ "part-time","part-time","part-time","part-time","part-time","part-time","part-time","part-time","part-time","part-time","part-time","part-time" ]
-    Shift  = [ "day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift" ]
-    experience  = [ "0-1 yr","0-3 yr","2 yr","3yr","freshers","freshers","0-1yr","2 yr","3 yr","1 yr","1-2 yr","freshers" ]
+    Shift  = [ "day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift","day-shift" ]
 
 
     docs = []
 
-    for Company,Uploaded ,JobRole, Location, Salary ,JobType, Shift, experience in zip(Company,Uploaded ,JobRole, Location, Salary ,JobType, Shift):
-        doc = {"company" : Company, "date_uploaded" : Uploaded, "job_role" : JobRole, "job_location":Location, "salary": Salary, "job_type":JobType, "working_shift":Shift, "Experience":experience }
+    for Company,Uploaded ,JobRole, Location, Salary ,JobType, Shift in zip(Company,Uploaded ,JobRole, Location, Salary ,JobType, Shift):
+        doc = {"company" : Company, "date_uploaded" : Uploaded, "job_role" : JobRole, "job_location":Location, "salary": Salary, "job_type":JobType, "working_shift":Shift }
         docs.append(doc)
 
     jobDetails.insert_many(docs)
