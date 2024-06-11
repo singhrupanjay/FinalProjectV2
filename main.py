@@ -217,13 +217,20 @@ def register():
         name = request.form.get("name")
         email = request.form.get("email")
         password = request.form.get("pass")
- 
-        if name or email or password:
-            # Insert data into MongoDB
-            user_credentials.insert_one({"name": name, "email": email, "password": password })
-            return redirect('/registersuccess')
+        c_pass = request.form.get("c_pass")
+
+
+        if password!=c_pass:
+            invalid = "password doesn't match"
+            return render_template('register.html',invalid = invalid)
+        
         else:
-            return render_template('register.html')
+            if name or email or password:
+                # Insert data into MongoDB
+                user_credentials.insert_one({"name": name, "email": email, "password": password, "c_pass":c_pass })
+                return redirect('/registersuccess')
+            else:
+                return render_template('register.html')
 
 
     return render_template('register.html')

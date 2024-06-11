@@ -29,7 +29,7 @@
             <a href="/index" class="logo"><i class="fas fa-briefcase"></i><b>JobManch</b></a>
             <nav class="navbar">
                 <a href="/index">Home</a>
-                <a href="/jobs">Jobs</a>
+                <a href="/index#jobsection">Jobs</a>
                 <a href="/about">About Us</a>
                 <a href="/contact">Contact Us</a>
                 <a href="/login">Log In / Register</a>
@@ -41,30 +41,30 @@
     <!-- ACCOUNT SECTION STARTS-->
     <div class="account-form-container">
         <section class="account-form">
-            <form action="" method="post">
+
+            <form id="myform" action="" method="post">
+                {%if invalid%}
+                <div>
+                    <h1>{{invalid}}</h1>
+                </div>
+
+                {%else%}
                 <img src="/static/register_img.svg" alt="register Form img" width="50%" height="50%">
                 <h3>create new account!</h3>
                 <input type="text" required name="name" maxlength="50" placeholder="Enter your name" class="input">
                 <input type="email" required name="email" maxlength="50" placeholder="Enter your email" class="input"
                     style="padding: 12px 20px; border: 2px solid black; border-radius: 4px;">
-                <input type="text" required name="pass" maxlength="20" placeholder="Enter your password" class="input">
-                <input type="text" required name="c_pass" maxlength="20" placeholder="Confirm your password"
+                <input type="password" required name="pass" maxlength="20" placeholder="Enter your password"
+                    class="input">
+                <input type="password" required name="c_pass" maxlength="20" placeholder="Confirm your password"
                     class="input">
                 <p>Already have an account? <a href="/login">Login now</a></p>
                 <input type="submit" value="login now" name="submit" class="btn">
+                {%endif%}
             </form>
         </section>
     </div>
     <!-- ACCOUNT SECTION END-->
-
-
-
-
-
-
-
-
-
 
     <!-- footer starts-->
 
@@ -104,15 +104,13 @@
 
         <div class="credit">&copy; copyright @2024 by <span>JobManch</span> | all rights reserved !</div>
     </footer>
-
-
     <!--footer ends-->
 
-
-
-
-
-
+    <script>
+        function myFunction() {
+            document.getElementById("myform").reset();
+        }
+    </script>
 
     <!-- custom js file link  -->
 
